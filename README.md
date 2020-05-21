@@ -1,2 +1,2 @@
-# CodeForces
+# CodeForces/Hackerrank
 Problem sets solutions
