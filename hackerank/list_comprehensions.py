@@ -1,5 +1,4 @@
-#Let's learn about list comprehensions! You are given three integers  and 
-#representing the dimensions of a cuboid along with an integer . You have to print a list of 
+ You have to print a list of 
 #all possible coordinates given by  on a 3D grid where the sum of is not equal to . Here,
 
 #python x = int ( raw_input()) y = int ( raw_input()) n = int ( raw_input()) ar = [] p = 0 
