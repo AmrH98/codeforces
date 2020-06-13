@@ -6,7 +6,7 @@ import random
 import re
 import sys
 
-# Complete the matchingStrings function below.
+
 def matchingStrings(strings, queries):
     answer = [0] * len(queries)
     i = -1
