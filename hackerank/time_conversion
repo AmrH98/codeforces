@@ -1,0 +1,27 @@
+
+
+import os
+import sys
+
+
+def timeConversion(s):
+    time = s
+    s = s[:-2].split(':')
+    timing = time[-2:]
+    h,m,s = map(int, time[:-2].split(':'))
+    h = h % 12 + (timing.upper() == 'PM') * 12
+    return (('%02d:%02d:%02d') % (h, m, s))
+    
+        
+    
+
+if __name__ == '__main__':
+    f = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = timeConversion(s)
+
+    f.write(result + '\n')
+
+    f.close()
