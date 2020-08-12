@@ -7,6 +7,13 @@ import sys
 
 
 def gradingStudents(grades):
+    # for x in grades:
+    #   if grades >= 38:
+    #       if x % 5 == 3:
+    #           i += 2
+    #       elif i % 5 == 4:
+    #            i += 1
+    #   print (i)
     results = []
     for x in grades:
         if x < 37:
