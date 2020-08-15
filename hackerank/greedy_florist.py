@@ -17,7 +17,6 @@ def getMinimumCost(friends, flowers):
             if countf == 0:
                 break
             price += (rounds + 1) * flowers[i]
-            print(price)
             countf -= 1
         flowers = flowers[friends:]
 
