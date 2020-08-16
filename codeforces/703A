@@ -1,0 +1,15 @@
+numberRounds= int(input())
+
+x, y =0, 0
+for i in range(numberRounds):
+    array = input().split()
+    if array[0] < array[1]:
+        y +=1
+    elif array[0] > array[1]:
+        x +=1
+if x > y:
+    print('Mishka')
+elif x < y:
+    print('Chris')
+else:
+    print('Friendship is magic!^^')
