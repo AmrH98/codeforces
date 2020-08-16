@@ -17,14 +17,10 @@ job = job[:int(jobCount)]
 time = 0
 pos = 1
 for x in job:
-    found = 1
-    while found != 0:
-        if pos > int(house):
-                pos = 1
-                continue
-        if pos == int(x):
-            found -=1
-        else:
-            pos+=1
-            time+=1
+    x = int(x)
+    if x >= pos:
+        time += x - pos
+    else:
+        time += int(house) - (pos - x)
+    pos = x
 print(time)
