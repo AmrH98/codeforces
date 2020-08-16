@@ -9,21 +9,22 @@
 
 # n = NUMBER OF HOUSES, m = Tasks, ai = task in the i house
 
-n, m = input().split()
-a = input().split()
-a = a[:int(m)]
+
+house, jobCount = input().split()
+job = input().split()
+job = job[:int(jobCount)]
+
 time = 0
 pos = 1
-m = int(m)
-for i in a:
-        while pos!=i:
-            if pos > int(n):
+for x in job:
+    found = 1
+    while found != 0:
+        if pos > int(house):
                 pos = 1
-            i = int(i)
-            if pos == i:
-                m -=1
-            else:
-                time+=1
-                pos +=1
-
+                continue
+        if pos == int(x):
+            found -=1
+        else:
+            pos+=1
+            time+=1
 print(time)
