@@ -1,0 +1,26 @@
+Aug/31/2020 18:36UTC+2	AmrHH	282A - Bit++	GNU C++14	Accepted	31 ms	0 KB
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main(){
+    int c;
+    cin >> c;
+    string x;
+    int count = 0;
+    while (c>0){
+        c--;
+        cin >> x;
+        if (x[1] == '+'){
+            count++;
+        } else{
+            count--;
+        }
+    }
+    cout << count;
+    return 0;
+}
