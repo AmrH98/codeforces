@@ -8,16 +8,16 @@ using namespace std;
 
 
 int main(){
-    int n, m, answer;
+    int n, m;
     cin >> n >> m;
-    answer = 0;
-
-    for (int a = 0; a * a <= n && a <= m; ++a)
+    
+    int answer = 0;
+    for (int a = 0; (a * a) <= n && a <= m; a++)
     {
-        int b = n - a * a;
-        if (a + b * b == m)
+        int b = n - (a * a);
+        if (a + (b * b) == m)
         {
-            answer += 1;
+            answer++;
         }
     }
 
