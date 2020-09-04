@@ -1,5 +1,16 @@
+/*
+Score
+100
 
-// Sample code to perform I/O:
+Time (sec)
+1.310000
+
+Memory (KiB)
+952
+
+Language
+C++
+    */
 
 #include <iostream>
 #include <vector>
