@@ -12,7 +12,7 @@ int main() {
         cin >> n;
         int count = 1;
         for(int i = 0; i <n ; i++){
-            count += (1 * ((n-1)-i)) ;
+            count += (1 * ((n-1)-i)) * M ;
         }
         cout << count << endl;
         
