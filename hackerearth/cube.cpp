@@ -1,4 +1,4 @@
-
+//https://nrich.maths.org/paintedcube/solution
 #include <math.h>
 #include <iostream>
 #include <vector>
