@@ -16,10 +16,10 @@ string pangrams(string s) {
     }
     for(int i =0; i<26;i++){
         if(index[i] == false){
-            return ("not panagram");
+            return "not panagram";
         }
     }
-    return ("panagram");
+    return "panagram";
 }
 
 int main()
