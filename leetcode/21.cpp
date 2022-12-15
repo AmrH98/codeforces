@@ -21,8 +21,8 @@ public:
         temp = answer; // temp pointer to first node
         while(list1 && list2){ // while lists not empty
             if(list1->val < list2->val){ // if list1 value smaller than list 2 we increment list1 index by 1 and vice versa
-                temp->next = list1;
-                list1 = list1->next;
+                temp->next = list1; // next node equal list1 value
+                list1 = list1->next; // traverse to next node
             }
             else{
                 temp->next = list2;
