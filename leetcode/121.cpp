@@ -6,8 +6,8 @@ public:
     int maxProfit(vector<int>& prices) {
         int high=prices[0], min=prices[0], profit=0;
         for(int i=0; i < prices.size(); i++){
-            if(prices[i] < min) {
-                profit = max(profit, high-min);
+            if(prices[i] < min) { // if curr smaller than min, curr is new min and calculte profit
+                profit = max(profit, high-min); 
                 high = prices[i];
                 min = prices[i];
             }else{
