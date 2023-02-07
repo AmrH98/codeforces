@@ -7,9 +7,10 @@ public:
         stack<char>temp;
         stack<char>temp2;
         for(auto x:s){
-            if(x == '#'){
+            if(x == '#'){ 
                 if(temp.empty()) continue;
                 else temp.pop();
+                // if backspace was found pop last element in stack, check first if stack if empty to not throw error
            
             }
             else temp.push(x);
@@ -22,6 +23,7 @@ public:
             }
             else temp2.push(x);
         }
+        // compare both stacks and return bool value
         return temp == temp2;
     }
 };
