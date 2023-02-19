@@ -34,7 +34,7 @@ public:
     }
 
     ListNode* reverseList(ListNode* head) {
-        ListNode *next, *prev = NULL, *current;
+        ListNode *next, *prev = NULL, *current; // prev = NULL so when we reach the end of the List, current->next = NULL and we break of loop
         current = head;
         while(current!=NULL){
             next = current->next;
