@@ -17,3 +17,19 @@ public:
         return ans;
     }
 };
+
+// Runtime 3 ms Beats 98.98%
+// Memory 12.8 MB Beats 55.23%
+
+class Solution {
+public:
+    vector<int> getConcatenation(vector<int>& nums) {
+        int size = nums.size();
+        for(int i=0;i<size;i++){
+            nums.push_back(nums[i]);
+        }
+        return nums;
+
+
+    }
+};
