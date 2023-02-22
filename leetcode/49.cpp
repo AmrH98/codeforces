@@ -24,3 +24,38 @@ public:
         
     }
 };
+
+// ANS 2
+// Runtime 146 ms Beats 9.3%
+// Memory 27.4 MB Beats 12.96%
+    
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+       vector<vector<string>> ans;
+       unordered_map<string, vector<string>>  map;
+       for(int i=0;i<strs.size(); i++){
+           string temp = getKey(strs[i]); // get string from function and the set map values to temp as key and initial string as value
+           map[temp].push_back(strs[i]); // key = temp, value = string from strs
+       }
+       for(auto i:map){
+           ans.push_back(i.second);
+       }
+       return ans;
+    }
+
+private: 
+    string getKey(string s){
+        int temp[26] = {0};
+        for(char i:s){
+            temp[i - 'a']++; // for every char in string add to vector
+        }
+        string key="";
+        for(int i=0; i<26;i++){
+            // add char value as int into string key as string         
+            key += to_string(temp[i] + 'a');
+        }
+        return key;
+    }
+
+};
