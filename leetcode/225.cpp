@@ -18,7 +18,7 @@ public:
             q2.push(q1.front()); // push every element till last to q2
             q1.pop(); // pop front of q1
         }
-        // q1 = [1,2,3,4,5] q2 = [4,3,2,1] *reversed q1 without last element
+        // q1 = [1,2,3,4,5] q2 = [1,2,3,4] * q1 without last element
         int temp = q1.front(); // last element 
         q1.pop(); // pop element from q1 
         swap(q1,q2); // put q2 in q1 in the reversed order created 
@@ -29,11 +29,11 @@ public:
         while(q1.size() > 1){ // reach last element of queue
             q2.push(q1.front());
             q1.pop();
-        } // q1 = [1,2,3,4,5] q2 = [4,3,2,1] *reversed q1 without last element
+        } // q1 = [1,2,3,4,5] q2 = [1,2,3,4] *q1 without last element
         int temp = q1.front(); // store last element
         q1.pop(); // q1 is empty
-        swap(q1,q2); // q1=[4,3,2,1] q2=[]
-        q1.push(temp); // q1 = [4,3,2,1,5];
+        swap(q1,q2); // q1=[1,2,3,4] q2=[]
+        q1.push(temp); // q1 = [[1,2,3,4,5];
         return temp; // return 5
     }
     
