@@ -1,3 +1,35 @@
+// Runtime 0 ms Beats 100%
+// Memory 8.8 MB Beats 69.33%
+
+class Solution {
+public:
+    int countStudents(vector<int>& students, vector<int>& sandwiches) {
+        int size = students.size();
+        queue<int> choices;
+        int i=0;
+        while(i<size){
+            choices.push(students[i]);
+            i++;
+        }
+        int repeats=0;
+        i=0;
+        while(choices.size() && choices.size() > repeats){
+            if(choices.front() == sandwiches[i]){
+                i++;
+                choices.pop();
+                repeats=0;
+            } else{
+                repeats++;
+                int temp = choices.front();
+                choices.pop();
+                choices.push(temp);
+            }
+        }
+        return choices.size();
+    }
+};
+
+
 // Runtime 3 ms Beats 69.90%
 // Memory 8.8 MB Beats 69.33%
 
