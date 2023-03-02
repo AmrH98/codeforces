@@ -1,6 +1,6 @@
 // Runtime 733 ms Beats 5.1%
 // Memory 45.9 MB Beats 55.88%
-
+// O(nlogn) Sol
 // using quick sort
 class Solution {
 private:
