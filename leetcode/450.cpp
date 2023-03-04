@@ -1,5 +1,5 @@
-// Runtime 29 ms Beats 93.98%
-// Memory 32.7 MB Beats 84.95%
+// Runtime 31 ms Beats 91.40%
+// Memory 32.6 MB Beats 98.39%
 
 /**
  * Definition for a binary tree node.
@@ -24,7 +24,7 @@ private:
 public:
     TreeNode* deleteNode(TreeNode* root, int key) {
         // 2 cases, either node has 2 descendants, or node has 1 or none
-        if(!root) return root;
+        if(!root) return NULL;
         // find key 
         if(key < root->val) root->left = deleteNode(root->left, key);
         else if(key > root->val) root->right = deleteNode(root->right, key);
