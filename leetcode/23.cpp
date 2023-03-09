@@ -1,7 +1,7 @@
 // Runtime 17 ms Beats 95.99%
 // Memory 13.9 MB Beats 25.49%
 
-// Supposedly its O(n^2) but got Runtime of O(n) with O(n) Memory
+// Supposedly its O(nlogn) but got Runtime of O(n) with O(n) Memory
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
