@@ -1,7 +1,24 @@
+
+// O(n) , O(1)
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if(!head) return NULL;
+        ListNode* prev=NULL, *curr, *nxt;
+        curr = head;
+        while(curr){
+            nxt = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = nxt;
+        }
+        return prev;
+    }
+};
+
+
 //Runtime: 16 ms, faster than 26.53% of C++ online submissions for Reverse Linked List.
 //Memory Usage: 8.4 MB, less than 40.73% of C++ online submissions for Reverse Linked List.
-
-
 
 /**
  * Definition for singly-linked list.
