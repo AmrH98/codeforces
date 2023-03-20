@@ -1,5 +1,29 @@
+// Recursive
+
+// Runtime 3 ms Beats 96.91%
+// Memory 14.7 MB Beats 86.4%
+
+// O(min(list1, list2)), space O(min(list1, list2))
+class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        if(!list1) return list2;
+        if(!list2) return list1;
+        if(list1->val <= list2->val){
+            list1->next = mergeTwoLists(list1->next, list2);
+            return list1;
+        } else{
+            list2->next = mergeTwoLists(list1, list2->next);
+            return list2;
+        }
+        return list1;
+    }
+};
+
+
 // Runtime 10 ms Beats 43.45%
 // Memory 14.6 MB Beats 99%
+// O(min(list1, list2)), space O(min(list1, list2))
 
 class Solution {
 public:
