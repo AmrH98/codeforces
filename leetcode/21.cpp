@@ -1,6 +1,28 @@
-// Runtime: 20 ms, faster than 20.10% of C++ online submissions for Merge Two Sorted Lists.
-// Memory Usage: 14.8 MB, less than 81.61% of C++ online submissions for Merge Two Sorted Lists.
+// Runtime 10 ms Beats 43.45%
+// Memory 14.6 MB Beats 99%
 
+class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        if(!list1) return list2;
+        if(!list2) return list1;
+        ListNode* ans = new ListNode(), *curr;
+        curr = ans;
+        while(list1 && list2){
+            if(list1->val < list2->val){
+                curr->next = list1;
+                list1 = list1->next;
+            } else {
+                curr->next = list2;
+                list2=list2->next;
+            }
+            curr = curr->next;
+        }
+        if(list1) curr->next = list1;
+        if(list2) curr->next = list2;
+        return ans->next;
+    }
+};
 
 /**
  * Definition for singly-linked list.
@@ -12,6 +34,8 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+// Runtime: 20 ms, faster than 20.10% of C++ online submissions for Merge Two Sorted Lists.
+// Memory Usage: 14.8 MB, less than 81.61% of C++ online submissions for Merge Two Sorted Lists.
 
 class Solution {
 public:
