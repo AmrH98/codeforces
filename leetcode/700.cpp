@@ -1,17 +1,25 @@
+// iterative 
+// Runtime 42 ms Beats 70.46%
+// Memory 34.9 MB Beats 35.82%
+
+// O(h) , space O(1)
+class Solution {
+public:
+    TreeNode* searchBST(TreeNode* root, int val) {
+        if(!root) return nullptr;
+        while(root){
+            if(root->val == val) return root;
+            if(val < root->val) root = root->left;
+            else root = root->right;
+        }
+        return nullptr;
+    }
+};
+
 // Runtime 48 ms Beats 42.74%
 // Memory 34.8 MB Beats 71.5%
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
+// Recursive 
 
 class Solution {
 public:
