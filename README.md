@@ -1,32 +1,40 @@
 # Problem Solving
 
-- Problem sets solutions
---- 
+## Problem Sets Solutions
 
+This repository contains solutions to various problem sets from online coding platforms. The solutions are implemented using various programming languages.
 
-### Timeline
+## Timeline
 
-- Programming languages used in problem sets 
-###### Compare progress of solving problem-sets during the past and following years
+The following table shows the timeline of programming languages used in problem sets:
 
-| Language        | Timeline   |
-| ------------- |:-------------:|
-| Python     | 2019 - present|
-| C++      | 2020 -   present    |
-| C | 2017-2018     |
+Language | Timeline
+-------- | --------
+Python   | 2019 - present
+C++      | 2020 - present
+C        | 2017-2018
 
---- 
+## Progress Comparison
 
+The following table shows a comparison of progress made in solving problem sets during the past and following years:
 
-### Websites
+Year | Python | C++  | C
+---- | ------ | ---  | -
+2017 | -      | -    | 100%
+2018 | -      | -    | 100%
+2019 | 100%   | -    | -
+2020 | 80%    | 20%  | -
+2021 | 50%    | 50%  | -
+2022 | -      | 100% | -
 
+## Websites
 
-- [Codeforces](https://github.com/AmrrHassan/problem_solving/tree/master/codeforces)
+The following are the websites from which the problem sets were sourced:
 
-- [Leetcode](https://github.com/AmrrHassan/problem_solving/tree/master/leetcode)
+- [Codeforces](https://codeforces.com/)
+- [LeetCode](https://leetcode.com/)
+- [HackerRank](https://www.hackerrank.com/)
+- [HackerEarth](https://www.hackerearth.com/)
+- [CodeWars](https://www.codewars.com/)
 
-- [Hackerrank](https://github.com/AmrrHassan/problem_solving/tree/master/hackerank)
-
-- [HackerEarth](https://github.com/AmrrHassan/problem_solving/tree/master/hackerearth)
-
-- [CodeWars](https://www.codewars.com/users/AmrrHassan)
+Happy problem-solving!
