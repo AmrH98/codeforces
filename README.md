@@ -2,6 +2,8 @@
 
 ## Problem Sets Solutions
 
+In order to keep a record of my problem and provide an insight into my approach and for time and space complexity, This will help not only me but anyone who stumbles upon this repo. I enjoy dedicating my free time to exploring edge cases, identifying solutions, and optimizing codes. Happy Coding!
+
 This repository contains solutions to various problem sets from online coding platforms. The solutions are implemented using various programming languages.
 
 ## Timeline
@@ -37,4 +39,4 @@ The following are the websites from which the problem sets were sourced:
 - [HackerEarth](https://www.hackerearth.com/)
 - [CodeWars](https://www.codewars.com/)
 
-Happy problem-solving!
+Happy problem solving!
