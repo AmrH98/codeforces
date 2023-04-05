@@ -1,7 +1,7 @@
 // Runtime 569 ms Beats 28.76%
 // Memory 163.8 MB Beats 84.51% 
 
-// O(1), O(h)
+// O(n), O(h)
 class Solution {
 public:
     TreeNode* getTargetCopy(TreeNode* original, TreeNode* cloned, TreeNode* target) {
